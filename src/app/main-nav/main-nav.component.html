@@ -1,0 +1,31 @@
+<div style="position: fixed; left: 0; right: 0; top: 0; z-index: 999;">
+  <ul>
+    <li><span style="font-size:30px;cursor:pointer;color: #f1f1f1" (click)="openNav()">&#9776;</span></li>
+
+  </ul>
+
+
+</div>
+
+<div id="mySidenav" class="sidenav" #mySideNav>
+  <a href="javascript:void(0)" class="closebtn" (click)="closeNav()">&times;</a>
+  <button class="dropdown-btn">LOCATION
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a routerLink="location"> ADD LOCATION</a> <br>
+    <a routerLink="locationList"> LOCATION LIST</a> <br>
+  </div>
+
+  <button class="dropdown-btn">USERS
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a routerLink="user">ADD USERS</a> <br>
+    <a routerLink="userList">USER LIST</a> <br>
+  </div>
+
+  <a routerLink="weather">WEATHER FORECAST</a>
+
+</div>
+

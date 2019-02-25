@@ -1,0 +1,7 @@
+<div class="row">
+  <table class="table">
+    <tr> <th>ID</th><th>EMAIL</th> <th>PASSWORD</th></tr>
+    <tr *ngFor="let user of users"> <td>{{user.id}}</td><td>{{user.email}}</td><td>{{user.password}}</td><td><a (click)="deleteUser(user.id)"><i class="fa fa-trash-o" aria-hidden="true"></i></a> <a routerLink="/editUser/{{user.id}}"><i class="fa fa-pencil" aria-hidden="true"></i></a></td> </tr>
+  </table>
+
+</div>

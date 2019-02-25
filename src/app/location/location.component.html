@@ -1,0 +1,14 @@
+<div class=" row">
+  <form [formGroup]="location" (ngSubmit)="onSubmit()">
+    <div class="row">
+      <div class="col-md-4">
+        <label for="locationName" style="padding-top: 3px;">LOCATION</label>
+      </div>
+      <div class="col-md-8">
+        <input class="form-control mb-3" id="locationName" formControlName="locationName">
+      </div>
+    </div>
+    <button class=" btn btn-danger" style="float:right">ADD</button>
+  </form>
+
+</div>

@@ -1,0 +1,7 @@
+<div class="row">
+  <table class="table">
+    <tr> <th>LOCATION ID</th><th>LOCATION NAME</th> </tr>
+    <tr *ngFor="let local of locations"> <td>{{local.id}}</td><td>{{local.name}}</td><td><a (click)="deleteLocation(local.id)"><i class="fa fa-trash-o" aria-hidden="true"></i></a> <a routerLink="/editLocation/{{local.id}}"><i class="fa fa-pencil" aria-hidden="true"></i></a></td> </tr>
+  </table>
+
+</div>

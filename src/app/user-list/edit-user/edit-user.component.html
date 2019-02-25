@@ -1,0 +1,22 @@
+<div class=" row">
+  <form [formGroup]="userForm" (ngSubmit)="onSubmit()">
+    <div class="row">
+      <div class="col-md-4">
+        <label for="userMail">EMAIL</label>
+      </div>
+      <div class=" col-md-8">
+        <input  type="email" class="form-control mb-3" id="userMail" formControlName="userMail">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-4">
+        <label for="userPassword">PASSWORD</label>
+      </div>
+      <div class=" col-md-6">
+        <input type="password" class="form-control mb-2" id="userPassword" formControlName="userPassword">
+      </div>
+    </div>
+    <button class=" btn btn-primary" style="float:right">LOG IN</button>
+  </form>
+</div>

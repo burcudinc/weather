@@ -1,0 +1,24 @@
+<div class=" row">
+  <form [formGroup]="weatherForm" (ngSubmit)="onSubmit()">
+    <div class="row">
+      <div class="col-md-4">
+        <label for="locationName" style="padding-top: 3px;">LOCATION</label>
+      </div>
+      <div class="col-md-8">
+        <select class="form-control mb-2 ml-2" formControlName="location">
+          <option value="">Seçiniz</option>
+          <option *ngFor="let location of locations" >{{location.name}} </option>
+        </select>
+      </div>
+    </div>
+    <button class=" btn btn-primary" style="float:right">SHOW</button>
+  </form>
+
+</div>
+
+<div class="row">
+  <table class="table table-bordered mt-4">
+    <tr><th>LOCATION NAME</th><th>TEMPATURE</th><th>DESCRIPTION</th></tr>
+    <tr><td>{{this.weatherForm.get('location').value}}</td><td>{{forecast?.temp}} °C</td><td>{{forecast?.description}}</td></tr>
+  </table>
+</div>
